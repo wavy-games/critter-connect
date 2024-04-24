@@ -1,14 +1,32 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critter Connect</title>
     <style>
-        .nice {
-            font-family: sans-serif;
-            color: white;
+        * {
+            padding: 0;
+            margin: 0;
         }
     </style>
-</head>
-<body style="background-color:#33475b">
-    <h2 style="color:white">Game Demo</h2>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     
-    <p class="nice">Welcome to the game demo app!</p>
+    <link rel="stylesheet" type="text/css" href="./app.css">
+
+    <meta property="og:title" content="Critter Connect" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="./" />
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="./preview.png">
+    <meta name="description" content="Play Critter Connect!">
+</head>
+<body>
+    <div id="useFont">dummy text</div>
+
+    <script src="https://unpkg.com/pixi.js@7.x/dist/pixi.min.js"></script>  
+    <script type="module" src="./game/game.js"></script>
 </body>
+</html>
